@@ -117,11 +117,13 @@
     pip install ncatbot httpx pydantic aiofiles jmcomic
     ```
 3. **配置 NapCat**
+
     确保你的 NapCat 客户端已启动，并且 HTTP/WebSocket 配置与 `ncatbot` 默认配置一致。
-4. **运行机器人**
+4. **先运行一次机器人, 待插件全部加载后关闭, 以创建默认配置文件**
     ```bash
     python main.py
     ```
+5. **填写配置文件等, 开始使用**
 
 ### 独立使用指南
 
@@ -131,7 +133,7 @@
 2. 创建一个 `main.py` 写入基本的 Bot 启动代码。
 3. 引用代码内容
     - **强烈推荐**: Linux使用软链接方式链接, Windows可使用管理员权限创建链接, 此时拉取更新只需进入源仓库`git pull`即可
-    - 将 `plugins/UnnamedImageSearchIntegrate` 文件夹完整复制到新项目的 `plugins/` 目录下。
+    - 将 `plugins/UnnamedImageSearchIntegrate` 文件夹完整复制到新项目的 `plugins/` 目录下。若项目更新需要手动复制
 4. 运行即可。
 
 ---
