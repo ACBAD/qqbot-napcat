@@ -1,0 +1,15 @@
+[submodule "jmcomic-integrate"]
+	path = jmcomic-integrate
+	url = https://github.com/UnnamedNcatplugins/jmcomic-integrate
+[submodule "plugins/jmcomic-integrate"]
+	path = plugins/jmcomic-integrate
+	url = https://github.com/UnnamedNcatplugins/jmcomic-integrate
+[submodule "plugins/image-search-integrate"]
+	path = plugins/image-search-integrate
+	url = https://github.com/UnnamedNcatplugins/image-search-integrate
+[submodule "plugins/cm-integrate"]
+	path = plugins/cm-integrate
+	url = https://github.com/UnnamedNcatplugins/cm-integrate
+[submodule "plugins/pixiv-integrate"]
+	path = plugins/pixiv-integrate
+	url = https://github.com/UnnamedNcatplugins/pixiv-integrate
