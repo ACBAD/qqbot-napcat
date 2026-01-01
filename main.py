@@ -33,7 +33,7 @@ async def cmd_func(event: GroupMessageEvent):
             continue
     if shell_cmd is None:
         return
-    await event.reply(subprocess.run(shell_cmd, capture_output=True, text=True).stdout)
+    await event.reply(subprocess.run(shell_cmd, capture_output=True, text=True, shell=True).stdout)
 
 
 bot.run_frontend()
