@@ -25,6 +25,7 @@ async def cmd_func(event: GroupMessageEvent):
     logger.debug(f'收到at消息, 开始验证')
     if len(event.message) != 2:
         logger.debug(f'at消息长度不为2, 已取消')
+        return
     for message_segment in event.message:
         if message_segment.msg_seg_type == 'text':
             logger.debug(f'解析到文本消息段, 类型: {type(message_segment)}, 内容: {message_segment.text}')
@@ -32,6 +33,7 @@ async def cmd_func(event: GroupMessageEvent):
             shell_cmd = message_segment.text if message_segment.text[0] != ' ' else message_segment.text[1:]
             continue
     if shell_cmd is None:
+        logger.debug('没有文本消息, 取消')
         return
     try:
         # 设置 timeout=10，意味着命令最多跑10秒，超时就杀掉
