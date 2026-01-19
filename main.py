@@ -89,6 +89,7 @@ while True:
             logger.error(f'连接重试已达最大限制, 退出')
             break
         bot.run_frontend()
+        break
     except NcatBotConnectionError as ncne:
         retry_cnt += 1
         logger.warning(f'检测到napcat主动关闭链接错误, 尝试恢复')
